@@ -44,7 +44,7 @@ export default function Header() {
             isScrolling
               ? {
                   backgroundColor: "white",
-                  height: "80px",
+                  boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
                   paddingTop: "1.5em",
                 }
               : null
