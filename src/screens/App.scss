@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+#root {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.header__content__content__nav__main {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 2em;
+}
+.header__content__nav__heading {
+  align-items: center;
+}
+.header__content__nav__heading img {
+  height: 45px;
+  width: 180px;
+}
+.header__content__nav__heading span {
+  font-weight: 300;
+}
+.nav__background {
+  background-color: #a58838;
+  border-top-right-radius: 50px 29px;
+  height: 30px;
+  width: 250px;
+}
+.header__content__content__nav__components {
+  height: 100%;
+  width: 100%;
+}
+.header__buttons {
+  margin-right: 1em;
+  margin-left: 1em;
+  background-color: transparent;
+  color: black;
+  text-decoration: none;
+}
+.header__buttons:hover {
+  transition: 0.2s ease-in-out;
+  color: #d39844;
+}
+.header__button__end {
+  margin-right: 1em;
+  margin-left: 1em;
+  background-color: transparent;
+  color: #d39844;
+  border: 1px solid #d39844;
+  padding: 0.7em;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
+.header__button__end:hover {
+  background-color: #d39844;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+.ibt__contant__nav {
+  display: none;
+  height: 100%;
+  color: #d39844;
+}
+.header__background img {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .ibt__contant__nav {
+    display: flex;
+  }
+}
