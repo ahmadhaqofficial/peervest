@@ -36,48 +36,41 @@ export default function Header() {
 
   return (
     <>
-      <div className="nav__main" style={{ backgroundColor: "white" }}>
-        <div
-          className="header__content__content__nav__main"
-          data-aos="fade-left"
-          style={
-            isScrolling
-              ? {
-                  backgroundColor: "white",
-                  boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
-                  paddingTop: "1.5em",
-                }
-              : null
-          }
-        >
-          <a href="/" className="header__content__nav__heading">
-            <img src={headerlogo} alt="#" />
-          </a>
+      <div className="header">
+        <div className="header__mian">
+          <div className="header__logo">
+            <a href="#">
+              <img src={headerlogo} alt="#" />
+            </a>
+          </div>
 
           {isOpen ? (
             <OutsideClickHandler
               onOutsideClick={() => {
-                if (window.innerWidth < 900) {
+                if (window.innerWidth < 1200) {
                   setIsOpen(false);
                 }
               }}
             >
-              <div className="header__content__content__nav__components">
-                <a className="header__buttons" href="#Home">
-                  Home
-                </a>
-                <a className="header__buttons" href="#components">
-                  Components
-                </a>
-                <a className="header__buttons" href="#Specifications">
-                  Specifications
-                </a>
-                <a className="header__buttons" href="#Features">
-                  Features
-                </a>
-                <a className="header__buttons" href="#Location">
-                  Location
-                </a>
+              <div className="header__nav">
+                <div className="header__components">
+                  <a className="header__links" href="#">
+                    Investor
+                  </a>
+                  <a className="header__links" href="#">
+                    Start-up
+                  </a>
+                  <a className="header__links" href="#">
+                    Services
+                  </a>
+                  <a className="header__links" href="#">
+                    About Us
+                  </a>
+                  <a className="header__links" href="#">
+                    FAQ
+                  </a>
+                  <button className="header__button">Contact</button>
+                </div>
               </div>
             </OutsideClickHandler>
           ) : null}
@@ -90,9 +83,9 @@ export default function Header() {
             title="Menu"
           >
             {isOpen ? (
-              <Close size={24} color="white" />
+              <Close size={24} color="#d39844" />
             ) : (
-              <Menu size={24} color="white" />
+              <Menu size={24} color="#d39844" />
             )}
           </button>
         </div>
