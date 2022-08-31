@@ -39,7 +39,7 @@ export default function Header() {
       <div className="header">
         <div className="header__mian">
           <div className="header__logo">
-            <a href="#">
+            <a href="/">
               <img src={headerlogo} alt="#" />
             </a>
           </div>
