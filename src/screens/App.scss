@@ -342,3 +342,37 @@ body {
     margin-bottom: 2em;
   }
 }
+.start__up__heading {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+.start__up__container {
+  padding: 4em;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.start__up__svg__container__main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 4em;
+  padding: 4em 0em;
+}
+.start__up__svg__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.start__up__svg__container svg {
+  margin-bottom: 1em;
+  stroke: #0a264e;
+}
+.start__up__svg__container__info {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}

@@ -1,11 +1,11 @@
 import React from "react";
 import Header from "./Header.jsx";
 import "../assets/Index.jsx";
-import { header, footerLogo } from "../assets/Index.jsx";
-import { Forminvester } from "./Forminvester";
-import { Footer } from "./Footer";
+import { header } from "../assets/Index.jsx";
+import Startup from "./Startup";
+import Startupsecond from "./Startupsecond";
 
-export default function Startup() {
+export default function Services() {
   return (
     <>
       <Header />
@@ -19,8 +19,9 @@ export default function Startup() {
           startups of your preference
         </div>
       </div>
-      <Forminvester />
-      <Footer footerLogo={footerLogo} />
+
+      <Startup />
+      <Startupsecond />
     </>
   );
 }
